@@ -6,24 +6,25 @@
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
         Title="Крестики мать его Нолики (version 06.03.21)" Height="500" Width="500" >
-    
 
-    <Grid HorizontalAlignment="Left"   Background="Purple" Height="471" VerticalAlignment="Top" Width="500" Margin="0,0,-6.4,-0.6">
-        <Button Name = "LeftUp" FontSize="52" HorizontalAlignment="Left" Margin="145,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="LeftUp_Click"/>
-        <Button Name = "MiddleUp" FontSize="52" HorizontalAlignment="Left" Margin="215,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="MiddleUp_Click"/>
-        <Button Name = "RightUp" FontSize="52" HorizontalAlignment="Left" Margin="285,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="RightUp_Click"/>
-        <Button Name = "Left" FontSize="52" HorizontalAlignment="Left" Margin="145,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Left_Click"/>
-        <Button Name = "Middle" FontSize="52" HorizontalAlignment="Left" Margin="215,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Middle_Click"/>
-        <Button Name = "Right" FontSize="52" HorizontalAlignment="Left" Margin="285,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Right_Click"/>
-        <Button Name = "LeftDown" FontSize="52" HorizontalAlignment="Left" Margin="145,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="LeftDown_Click"/>
-        <Button Name = "MiddleDown" FontSize="52" HorizontalAlignment="Left" Margin="215,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="MiddleDown_Click"/>
-        <Button Name = "RightDown" FontSize="52" HorizontalAlignment="Left" Margin="285,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="RightDown_Click"/>
-        <Button Name = "Reset"  Background="#FFAB3204   " Foreground="#FFAB32" FontFamily="Calibri Bold"   FontSize="25" Content="Reset" HorizontalAlignment="Left" Margin="215,108,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Reset_Click"/>
-        <TextBox HorizontalAlignment="Left" IsReadOnly="True" TextAlignment="Center" FontSize="100" Height="140" Margin="27,234,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top" Width="95"/>
-        <TextBox HorizontalAlignment="Left" IsReadOnly="True" TextAlignment="Center" FontSize="100" Height="140" Margin="379,234,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" Width="95"/>
-        <TextBox Name = "FirstPlayer" TextAlignment="Center" FontSize="50" IsReadOnly="True" HorizontalAlignment="Left" Height="70" Margin="145,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="FirstPlayer_TextChanged"  />
-        <TextBox Name = "SecondPlayer" TextAlignment="Center" FontSize="50" IsReadOnly="True" HorizontalAlignment="Left" Height="70" Margin="285,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="SecondPlayer_TextChanged" />
-        <TextBox Name = "WhoMove" IsReadOnly="True" TextAlignment="Center" FontSize="40" HorizontalAlignment="Left" Height="70" Margin="215,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="70" TextChanged="WhoMove_TextChanged"/>
+
+    <Grid HorizontalAlignment="Left"  Background="#EED8AE" Height="471" VerticalAlignment="Top" Width="500" Margin="0,0,-6.4,-0.6">
+        <Button Name = "LeftUp" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="145,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="LeftUp_Click"/>
+        <Button Name = "MiddleUp" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="215,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="MiddleUp_Click"/>
+        <Button Name = "RightUp" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="285,199,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="RightUp_Click"/>
+        <Button Name = "Left" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="145,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Left_Click"/>
+        <Button Name = "Middle" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="215,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Middle_Click"/>
+        <Button Name = "Right" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="285,269,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Right_Click"/>
+        <Button Name = "LeftDown" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="145,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="LeftDown_Click"/>
+        <Button Name = "MiddleDown" Background="#FFC1C1" Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="215,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="MiddleDown_Click"/>
+        <Button Name = "RightDown" Background="#FFC1C1 " Foreground="#EE7942" FontSize="52" HorizontalAlignment="Left" Margin="285,339,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="RightDown_Click"/>
+        <Button Name = "Reset"  Background="#CD9B9B" Foreground="#FFD39B" FontFamily="Calibri Bold"   FontSize="25" Content="Reset" HorizontalAlignment="Left" Margin="215,108,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Reset_Click"/>
+        <TextBox HorizontalAlignment="Left" Background="#CD9B9B" Foreground="#FFD39B" IsReadOnly="True" TextAlignment="Center" FontSize="100" Height="140" Margin="27,234,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top" Width="95"/>
+        <TextBox HorizontalAlignment="Left"  Background="#CD9B9B" Foreground="#FFD39B" IsReadOnly="True" TextAlignment="Center" FontSize="100" Height="140" Margin="379,234,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" Width="95"/>
+        <TextBox Name = "FirstPlayer" Foreground="#EE7942" Background ="#CDBA96" TextAlignment="Center" FontSize="50" IsReadOnly="True" HorizontalAlignment="Left" Height="70" Margin="140,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="FirstPlayer_TextChanged"  />
+        <TextBox Name = "SecondPlayer" Foreground="#EE7942" Background ="#CDBA96" TextAlignment="Center" FontSize="50" IsReadOnly="True" HorizontalAlignment="Left" Height="70" Margin="290,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="SecondPlayer_TextChanged" />
+        <TextBox Name = "WhoMove" Foreground="#EE7942" Background ="#CDBA96" IsReadOnly="True" TextAlignment="Center" FontSize="50" HorizontalAlignment="Left" Height="70" Margin="215,33,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="70" TextChanged="WhoMove_TextChanged"/>
+        
     </Grid>
 
 

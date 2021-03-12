@@ -27,20 +27,22 @@ namespace TicTacToe
         Button[] _buttons = new Button[9];
         public void ButtonClick(int value)
         {
-            Print(value);
-            _buttons[value].Content = Transporter[value];
-            if (_moveCount >= 5)
+            if (Transporter[value] == null)
             {
-                if (CheckWin())
+                Print(value);
+                _buttons[value].Content = Transporter[value];
+                if (_moveCount >= 5)
                 {
-                    AddPoint();
-                    ResetGame();
-                    return;
+                    if (CheckWin())
+                    {
+                        AddPoint();
+                        ResetGame();
+                        return;
+                    }
                 }
+                if (_moveCount == 9)
+                    ResetGame();
             }
-            if (_moveCount == 9)
-                ResetGame();
-
 
         }
         public void Print(int button)
