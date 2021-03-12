@@ -64,7 +64,7 @@ namespace TicTacToe
 
         public bool CheckWin()
         {
-            /////////OBLIQUELY LEFT ON RIGHT - НА ИСКОСОК ЛЕВО НА СПРАВА///////////////////
+            /////////OBLIQUELY LEFT ON RIGHT - НА ИСКОСОК CЛЕВО НА ПРАВО///////////////////
             if ((Transporter[0] == X || O == Transporter[0]) && Transporter[0] == Transporter[4] && Transporter[0] == Transporter[8])
             {
                 return true;
